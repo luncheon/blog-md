@@ -1,0 +1,41 @@
+{
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    "@textlint-rule/no-unmatched-pair": true,
+    "common-misspellings": true,
+    "ja-nakaguro-or-halfwidth-space-between-katakana": true,
+    "ja-no-abusage": true,
+    "ja-no-mixed-period": {
+      "allowPeriodMarks": ["、", "…"],
+      "allowEmojiAtEnd": true
+    },
+    "ja-no-space-between-full-width": true,
+    "ja-no-successive-word": {
+      "severity": "warning"
+    },
+    "ja-space-around-code": {
+      "before": true,
+      "after": true
+    },
+    "ja-space-between-half-and-full-width": {
+      "space": "always"
+    },
+    "no-double-negative-ja": true,
+    "no-doubled-conjunctive-particle-ga": true,
+    "no-doubled-joshi": {
+      "severity": "warning",
+      "allow": ["か", "と", "とか", "にも"]
+    },
+    "no-dropping-the-ra": true,
+    "no-hankaku-kana": true,
+    "no-nfd": true,
+    "preset-jtf-style": {
+      "3.1.1.全角文字と半角文字の間": false,
+      "4.1.1.句点(。)": false,
+      "4.2.1.感嘆符(！)": false,
+      "4.2.2.疑問符(？)": false
+    }
+  }
+}
