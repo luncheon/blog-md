@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fs = require('fs')
-const textlintEngine = new (require('textlint').TextLintEngine)()
+const path = require('path')
+const textlintEngine = new (require('textlint').TextLintEngine)({ configFile: path.resolve(__dirname, '.textlintrc') })
 const md2html = require('./md2html')
 
 const compile = async inputFilename => {
