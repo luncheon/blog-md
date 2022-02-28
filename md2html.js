@@ -1,4 +1,4 @@
-const marked = require('marked')
+const { marked } = require('marked')
 const hljs = require('highlight.js')
 require('./hljs-mint')(hljs)
 
