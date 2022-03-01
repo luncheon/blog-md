@@ -3,7 +3,7 @@ const hljs = require('highlight.js')
 require('./hljs-mint')(hljs)
 
 const renderer = new marked.Renderer()
-renderer.link = (href, title, text) => `<a rel="noopener nofollow" target="_blank" href="${href}"${title ? ` title="${title}"` : ''} style="text-decoration: underline">${text}</a>`
+renderer.link = (href, title, text) => `<a target="_blank" rel="noreferrer noopener nofollow" href="${href}"${title ? ` title="${title}"` : ''} style="text-decoration: underline">${text}</a>`
 
 module.exports = markdownContent => {
   return marked(markdownContent, {
